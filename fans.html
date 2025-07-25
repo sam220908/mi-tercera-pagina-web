@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Fans de Mon Laferte</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #9c27b0, #e040fb);
+      color: #fff;
+      padding: 50px 20px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: 900;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+
+    header p {
+      font-size: 1.3rem;
+      font-style: italic;
+      margin-top: 10px;
+      color: #f8bbd0;
+    }
+
+    .fans-list {
+      max-width: 900px;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 30px 40px;
+      box-shadow: 0 8px 25px rgba(255, 255, 255, 0.15);
+    }
+
+    .fan {
+      display: flex;
+      align-items: center;
+      margin-bottom: 25px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      padding-bottom: 15px;
+    }
+
+    .fan:last-child {
+      border-bottom: none;
+    }
+
+    .fan img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 25px;
+      box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+      border: 2px solid #e040fb;
+    }
+
+    .fan-info h3 {
+      margin-bottom: 5px;
+      font-size: 1.3rem;
+      color: #ffd6f7;
+    }
+
+    .fan-info p {
+      font-size: 1rem;
+      color: #fce4ec;
+      font-style: italic;
+    }
+
+    footer {
+      margin-top: auto;
+      text-align: center;
+      padding: 25px 10px;
+      font-size: 0.9rem;
+      color: #f8bbd0;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Fans de Mon Laferte</h1>
+    <p>Un espacio dedicado a los seguidores más apasionados</p>
+  </header>
+
+  <section class="fans-list">
+    <div class="fan">
+      <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Fan 1" />
+      <div class="fan-info">
+        <h3>Ana María</h3>
+        <p>"La música de Mon Laferte me inspira a ser valiente y auténtica."</p>
+      </div>
+    </div>
+
+    <div class="fan">
+      <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Fan 2" />
+      <div class="fan-info">
+        <h3>Carlos Eduardo</h3>
+        <p>"Sus letras me acompañan en los momentos más difíciles."</p>
+      </div>
+    </div>
+
+    <div class="fan">
+      <img src="https://randomuser.me/api/portraits/women/22.jpg" alt="Fan 3" />
+      <div class="fan-info">
+        <h3>Mariana López</h3>
+        <p>"Admiro su valentía y compromiso social."</p>
+      </div>
+    </div>
+
+    <div class="fan">
+      <img src="https://randomuser.me/api/portraits/men/72.jpg" alt="Fan 4" />
+      <div class="fan-info">
+        <h3>Jorge Salinas</h3>
+        <p>"Cada concierto es una experiencia única y emocionante."</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Comunidad de Fans de Mon Laferte
+  </footer>
+  <a href="index.html"><h4>Regreso</h4></a>
+</body>
+</html>

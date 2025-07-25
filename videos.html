@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Videos de Mon Laferte</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #faf0f7;
+      color: #333;
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h1 {
+      text-align: center;
+      color: #9c27b0;
+      margin-bottom: 40px;
+      font-size: 3em;
+      font-weight: 700;
+    }
+
+    .videos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 25px;
+    }
+
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 ratio */
+      height: 0;
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(156, 39, 176, 0.3);
+      background: #000;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .video-container:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 25px rgba(156, 39, 176, 0.5);
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #777;
+      font-style: italic;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <h1>Videos de Mon Laferte</h1>
+
+  <section class="videos">
+    <div class="video-container">
+      <iframe src="https://youtu.be/WT-VE9OyAJk?si=Q-KgNK8b1Q4tIi5M" title="Mon Laferte - Tu falta de querer" allowfullscreen></iframe>
+    </div>
+    <div class="video-container">
+      <iframe src="https://youtu.be/3Y1-Lie335o?si=9guzVJUQVbqTb-o2" title="Mon Laferte - Amar y querer" allowfullscreen></iframe>
+    </div>
+    <div class="video-container">
+      <iframe src="https://youtu.be/PQlG1gznMBE?si=QeAoZegEgJOfVho5" title="Mon Laferte - Amor completo" allowfullscreen></iframe>
+    </div>
+    <div class="video-container">
+      <iframe src="https://youtu.be/i9_apne18Lk?si=ywnQmyQmLjP-o0sa" title="Mon Laferte - Si tú me quisieras" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Videos de Mon Laferte
+  </footer>
+  <a href="index.html"><h4>Regreso</h4></a>
+</body>
+</html>

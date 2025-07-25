@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Galería de Mon Laferte</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #faf0f7;
+      margin: 40px;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      color: #9c27b0;
+      margin-bottom: 30px;
+      font-size: 3em;
+      font-weight: 700;
+    }
+
+    .galeria {
+      max-width: 1000px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .galeria img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(156, 39, 176, 0.3);
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .galeria img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 25px rgba(156, 39, 176, 0.5);
+    }
+
+    /* Pie de página */
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #777;
+      font-style: italic;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <h1>Galería de Mon Laferte</h1>
+
+  <section class="galeria">
+    <img src="con1.jpg"Mon Laferte Concierto 1" />
+    <img src="con2.jpg" alt="Mon Laferte Concierto 2" />
+    <img src="con3.jpg" alt="Mon Laferte Concierto 3" />
+    <img src="con4.jpeg"Mon Laferte Violín" />
+    <img src="con5.jpg" alt="Mon Laferte 2023" />
+    <img src="con6.webp" alt="Mon Laferte en concierto" />
+  </section>
+
+  <footer>
+    &copy; 2025 Galería creada por ti
+  </footer>
+  <a href="index.html"><h4>Regreso</h4></a>
+</body>
+</html>
